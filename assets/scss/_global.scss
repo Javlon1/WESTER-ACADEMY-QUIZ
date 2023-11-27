@@ -1,0 +1,137 @@
+@import './utilities/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Onest', sans-serif;
+}
+
+#pop-up-close {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    display: none;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.pop-up {
+    width: 376px;
+    display: none;
+    margin: 0 auto;
+    position: fixed;
+    top: 15%;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+
+    &__form {
+        width: 376px;
+        padding: 20px;
+        margin-top: 15%;
+        border-radius: 5px;
+        background-color: $white;
+        box-shadow: 0 0 10px $black;
+
+        &__top {
+            position: relative;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+                text-align: left;
+            }
+
+            p {
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+                position: absolute;
+                top: .3rem;
+                right: .3rem;
+            }
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            margin: .5rem 0;
+            line-height: 22px;
+        }
+
+        &__inp {
+            border: 2px solid #11101666;
+            margin-bottom: 1rem;
+            width: 100%;
+            color: $black;
+            padding: 1rem;
+            border-radius: 1rem;
+            font-weight: 600;
+        }
+
+        &__btn {
+            width: 100%;
+            color: $white;
+            border: transparent;
+            padding: 1rem 0;
+            border-radius: 1rem;
+            background-color: $black;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .pop-up {
+        width: 310px;
+
+        &__form {
+            width: 310px;
+
+            &__subtitle {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+html {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+input {
+    outline: none;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+}

@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Onest", sans-serif;
+}
+
+#pop-up-close {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  display: none;
+  top: 0;
+  z-index: 1000;
+}
+
+.pop-up {
+  width: 376px;
+  display: none;
+  margin: 0 auto;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+}
+.pop-up__form {
+  width: 376px;
+  padding: 20px;
+  margin-top: 15%;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #292929;
+}
+.pop-up__form__top {
+  position: relative;
+}
+.pop-up__form__top h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+.pop-up__form__top p {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+}
+.pop-up__form__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  line-height: 22px;
+}
+.pop-up__form__inp {
+  border: 2px solid rgba(17, 16, 22, 0.4);
+  margin-bottom: 1rem;
+  width: 100%;
+  color: #292929;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+.pop-up__form__btn {
+  width: 100%;
+  color: #fff;
+  border: transparent;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  background-color: #292929;
+}
+
+@media only screen and (max-width: 575px) {
+  .pop-up {
+    width: 310px;
+  }
+  .pop-up__form {
+    width: 310px;
+  }
+  .pop-up__form__subtitle {
+    font-size: 14px;
+  }
+}
+html {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+input {
+  outline: none;
+  padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  width: 100%;
+  height: 95px;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.header .container__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container__nav__number a {
+  color: #292929;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 360px) {
+  .header .container__nav__number a {
+    font-size: 20px;
+  }
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.intro .container__list {
+  background-image: url("../../img/intro-bc.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: #F2F2F2;
+  padding: 50px;
+  border-radius: 1rem;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.intro .container__list__item {
+  width: 57%;
+}
+.intro .container__list__item__title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.intro .container__list__item__btn {
+  display: block;
+  margin-top: 64px;
+  width: 160px;
+  text-align: center;
+  padding: 0.5rem 0;
+  border: transparent;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #292929;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .intro .container__list__item {
+    width: 70%;
+  }
+  .intro .container__list__item__btn {
+    margin-top: 44px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .intro {
+    padding: 26px 0 25px;
+  }
+  .intro .container__list__item {
+    width: 90%;
+  }
+  .intro .container__list__item__title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .intro .container__list {
+    height: 400px;
+    background-size: 300px;
+    padding: 2.1rem 1.5rem;
+  }
+  .intro .container__list__item {
+    width: 100%;
+  }
+  .intro .container__list__item__title {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .intro .container__list__item__btn {
+    margin-top: 34px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .intro .container__list {
+    background-size: 270px;
+  }
+  .intro .container__list__item__title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}

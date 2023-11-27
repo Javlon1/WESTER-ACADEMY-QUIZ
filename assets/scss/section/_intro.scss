@@ -1,0 +1,126 @@
+@import "../utilities/variables";
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .container {
+        &__list {
+            background-image: url("../../img/intro-bc.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-color: $gray;
+            padding: 50px;
+            border-radius: 1rem;
+            height: 500px;
+            display: flex;
+            align-items: center;
+
+            &__item {
+                width: 57%;
+
+                &__title {
+                    font-size: 42px;
+                    font-weight: 700;
+                    line-height: 48px;
+                }
+
+                &__btn {
+                    display: block;
+                    margin-top: 64px;
+                    width: 160px;
+                    text-align: center;
+                    padding: .5rem 0;
+                    border: transparent;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    color: $white;
+                    background-color: $black;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .intro {
+        .container {
+            &__list {
+                &__item {
+                    width: 70%;
+
+                    &__btn {
+                        margin-top: 44px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .intro {
+        padding: 26px 0 25px;
+        .container {
+            &__list {
+                &__item {
+                    width: 90%;
+
+                    &__title {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .intro {
+        .container {
+            &__list {
+                height: 400px;
+                background-size: 300px;
+                padding: 2.1rem 1.5rem;
+
+                &__item {
+                    width: 100%;
+
+                    &__title {
+                        font-size: 30px;
+                        font-weight: 600;
+                        line-height: 40px;
+                    }
+
+                    &__btn {
+                        margin-top: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 575px) {
+    .intro {
+        .container {
+            &__list {
+                background-size: 270px;
+                &__item {
+
+                    &__title {
+                        font-size: 1.7rem;
+                        font-weight: 600;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}

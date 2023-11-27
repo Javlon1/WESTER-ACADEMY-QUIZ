@@ -1,0 +1,41 @@
+@import "../utilities/variables";
+
+.header {
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    background-color: $white;
+
+    .container {
+        &__nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__number {
+                a {
+                    color: $black;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .header {
+        .container {
+            &__nav {
+                &__number {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
