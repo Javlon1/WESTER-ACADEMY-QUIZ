@@ -233,8 +233,11 @@ li {
     line-height: 32px;
   }
 }
+.quiz {
+  margin-top: 100px;
+}
 .quiz .container {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;

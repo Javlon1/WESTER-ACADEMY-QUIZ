@@ -1,8 +1,10 @@
 @import "../utilities/variables";
 
 .quiz {
+    margin-top: 100px;
+
     .container {
-        height: 100vh;
+        height: 90vh;
         display: flex;
         align-items: center;
         justify-content: center;
