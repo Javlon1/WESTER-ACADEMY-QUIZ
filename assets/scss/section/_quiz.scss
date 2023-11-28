@@ -35,28 +35,13 @@
                 }
 
                 &__time {
-                    width: 130px;
+                    width: 70px;
+                    height: 36px;
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
-
-                    &__sec {
-                        width: 70px;
-                        height: 36px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 2rem;
-                        background-color: #F2F2F2;
-                    }
-
-                    &__btn {
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 50%;
-                        border: none;
-                        background-color: #F2F2F2;
-                    }
+                    justify-content: center;
+                    border-radius: 2rem;
+                    background-color: #F2F2F2;
                 }
 
                 &__title {

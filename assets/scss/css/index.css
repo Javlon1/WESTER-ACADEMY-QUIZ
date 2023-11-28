@@ -270,25 +270,12 @@ li {
   background-color: #8D46F6;
 }
 .quiz .container__quest__top__time {
-  width: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.quiz .container__quest__top__time__sec {
   width: 70px;
   height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 2rem;
-  background-color: #F2F2F2;
-}
-.quiz .container__quest__top__time__btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
   background-color: #F2F2F2;
 }
 .quiz .container__quest__top__title {
