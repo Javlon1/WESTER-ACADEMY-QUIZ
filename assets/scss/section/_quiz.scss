@@ -1,0 +1,271 @@
+@import "../utilities/variables";
+
+.quiz {
+    .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__quest {
+            width: 80%;
+            border-radius: 24px;
+            box-shadow: 0 0 4px $black;
+            padding: 1rem;
+
+            &__top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                &__cuantity {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 70px;
+
+                    p {
+                        width: 4px;
+                        height: 20px;
+                        border-radius: .5rem;
+                        background-color: #8D46F6;
+                    }
+                }
+
+                &__time {
+                    width: 130px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &__sec {
+                        width: 70px;
+                        height: 36px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 2rem;
+                        background-color: #F2F2F2;
+                    }
+
+                    &__btn {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: none;
+                        background-color: #F2F2F2;
+                    }
+                }
+
+                &__title {
+                    width: 100%;
+                    margin-top: 1rem;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+            }
+
+            &__list {
+                width: 100%;
+                height: 350px;
+                margin-top: 2rem;
+                border-radius: 1rem;
+                background-color: #F2F2F2;
+                padding: .5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+
+                &__item {
+                    width: 100%;
+                    height: 72px;
+                    background-color: #fff;
+                    border-radius: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 1.5rem;
+                    cursor: pointer;
+                    transition: $transition;
+
+                    p {
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background-color: #f2f2f2;
+                        transition: $transition;
+
+                        i {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                        }
+
+                        .bi-x-lg {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #F2F2F2;
+
+                        p {
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__pagination {
+            margin-top: 2.5rem;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__btn1 {
+                width: 220px;
+                height: 50px;
+                border-radius: .8rem;
+                border: none;
+                font-weight: 600;
+                font-size: 1.1rem;
+            }
+
+            &__btn2 {
+                width: 220px;
+                height: 50px;
+                border-radius: .8rem;
+                border: none;
+                font-weight: 600;
+                font-size: 1.1rem;
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .quiz {
+        .container {
+            &__quest {
+                width: 100%;
+
+                &__top {
+
+                    &__title {
+                        font-size: 20px;
+                    }
+                }
+
+                &__list {
+                    height: 330px;
+
+                    &__item {
+                        height: 65px;
+                    }
+                }
+            }
+
+            &__pagination {
+                margin-top: 2.3rem;
+                width: 450px;
+
+                &__btn1 {
+                    width: 200px;
+                    height: 45px;
+                }
+
+                &__btn2 {
+                    width: 200px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .quiz {
+        .container {
+            &__quest {
+                width: 100%;
+
+                &__top {
+
+                    &__title {
+                        font-size: 1rem;
+                        line-height: 20px;
+                    }
+                }
+
+                &__list {
+                    margin-top: 20px;
+                    height: 300px;
+
+                    &__item {
+                        b {
+                            font-size: .8rem;
+                            width: 80%;
+                        }
+
+                        p {
+                            width: 30px;
+                            height: 30px;
+
+                            i {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        height: 60px;
+                    }
+                }
+            }
+
+            &__pagination {
+                margin-top: 2rem;
+                padding: 0 1rem;
+                width: 320px;
+
+                &__btn1 {
+                    width: 140px;
+                    height: 40px;
+                }
+
+                &__btn2 {
+                    width: 140px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+.selected {
+    background-color: #F2F2F2 !important;
+
+    p {
+        background-color: #fff !important;
+
+        .bi-plus-lg {
+            display: none !important;
+        }
+
+        .bi-x-lg {
+            display: block !important;
+        }
+    }
+
+}

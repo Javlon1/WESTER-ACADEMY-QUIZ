@@ -11,6 +11,7 @@ function closeModal() {
 }
 
 const btn = document.querySelector(".container__list__item__btn")
+
 btn.addEventListener("click", () => {
     openModal()
     document.body.style.overflow = 'hidden';
