@@ -1,0 +1,331 @@
+@import "../utilities/variables";
+
+.result {
+    padding: 150px 0 100px;
+
+    .container {
+        &__top {
+            margin: 0 auto;
+            width: 80%;
+            background-image: url("../../img/result-bc.png");
+            background-repeat: no-repeat;
+            background-position: right;
+            background-color: #F2F2F2;
+            padding: 1.2rem;
+            border-radius: 1.8rem;
+            height: 160px;
+
+            &__title {
+                font-family: Onest;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 22px;
+            }
+
+            &__text {
+                max-width: 685px;
+                margin-top: 1rem;
+                padding: 0px, 0px, 8px, 0px
+            }
+        }
+
+        &__answer {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            &__left {
+                margin-top: 2rem;
+                width: 48%;
+
+                &__list {
+                    &__item {
+                        margin-top: 2rem;
+                        height: 170px;
+                        padding: 1rem;
+                        border-radius: 1.3rem;
+                        background-color: $gray;
+                        display: flex;
+                        justify-content: space-between;
+                        background-image: url("../../img/result.png");
+                        background-repeat: no-repeat;
+                        background-position: right top;
+
+                        span {
+                            h4 {
+                                font-size: 30px;
+                                font-weight: 700;
+                            }
+
+                            p {
+                                margin-top: 1.5rem;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        b {
+                            font-size: 60px;
+                            font-weight: 700;
+                        }
+
+                        &:first-child {
+                            margin-top: 0;
+                            background: radial-gradient(50% 50% at 50% 50%, #00D959 0%, #C1EC65 48.96%, #CFFF80 100%);
+                        }
+                    }
+                }
+            }
+
+            &__right {
+                margin-top: 2rem;
+
+                &__list {
+                    li {
+                        margin-top: 2rem;
+                        width: 400px;
+                        border-radius: 1rem;
+                        background-color: $gray;
+                        padding: 1rem;
+                        position: relative;
+
+                        h3 {
+                            font-size: 27px;
+                            font-weight: 500;
+                            line-height: 30px;
+                        }
+
+                        a {
+                            display: block;
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: $white;
+                            border-radius: 50%;
+                            background-color: $black;
+                            position: absolute;
+                            right: 1rem;
+                            bottom: 1rem;
+                        }
+
+                        b {
+                            display: block;
+                            color: #8D46F6;
+                            font-size: 27px;
+                            font-weight: 500;
+                        }
+
+                        span {
+                            margin-top: 1rem;
+                            width: 90%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            img {
+                                width: 20%;
+                                height: 20px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        &:first-child {
+                            margin-top: 0;
+                            background: radial-gradient(50% 50% at 50% 50%, #EAEED5 0%, #46C1F6 24.08%, #638FF6 43.31%, #7C63F6 69.61%, #8D46F6 100%);
+
+                            h3 {
+                                color: $white;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                                font-weight: 500;
+                                margin-top: 1rem;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .result {
+        .container {
+            &__top {
+                width: 80%;
+                height: 160px;
+            }
+
+            &__answer {
+                width: 80%;
+                &__left {
+                    width: 48%;
+                    &__list {
+                        &__item {
+                            height: 170px;
+                        }
+                    }
+                }
+
+                &__right {
+                    width: 48%;
+
+                    &__list {
+                        li {
+                            width: 100%;
+
+                            h3 {
+                                font-size: 25px;
+                            }
+
+                            a {
+                                width: 35px;
+                                height: 35px;
+                            }
+
+                            b {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .result {
+        .container {
+            &__top {
+                width: 80%;
+                background-position: top right;
+                background-size: 200px;
+                height: auto;
+            }
+
+            &__answer {
+                width: 80%;
+                    &__left {
+                        width: 48%;
+                    &__list {
+                        &__item {
+                            height: auto;
+
+                            span {
+                                h4 {
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                }
+    
+                                p {
+                                    margin-top: 1.2rem;
+                                }
+                            }
+    
+                            b {
+                                font-size: 45px;
+                                font-weight: 600;
+                            }
+    
+                        }
+                    }
+                }
+
+                &__right {
+                    width: 48%;
+
+                    &__list {
+                        li {
+                            width: 100%;
+
+                            h3 {
+                                font-size: 25px;
+                            }
+
+                            a {
+                                width: 35px;
+                                height: 35px;
+                            }
+
+                            b {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .result {
+        .container {
+            &__top {
+                width: 100%;
+            }
+
+            &__answer {
+                width: 100%;
+                display: block;
+                    &__left {
+                        width: 100%;
+                    &__list {
+                        &__item {
+                            height: auto;
+
+                            span {
+                                h4 {
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                }
+    
+                                p {
+                                    margin-top: 1.2rem;
+                                }
+                            }
+    
+                            b {
+                                font-size: 45px;
+                                font-weight: 600;
+                            }
+    
+                        }
+                    }
+                }
+
+                &__right {
+                    width: 100%;
+
+                    &__list {
+                        li {
+                            width: 100%;
+
+                            h3 {
+                                font-size: 25px;
+                            }
+
+                            a {
+                                width: 35px;
+                                height: 35px;
+                            }
+
+                            b {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
