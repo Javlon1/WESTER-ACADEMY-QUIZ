@@ -2,7 +2,7 @@
 
 .quiz {
     .container {
-        padding: 150px 0 100px;
+        padding: 150px 14px 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -158,6 +158,8 @@
 @media only screen and (max-width: 991px) {
     .quiz {
         .container {
+            padding: 100px 14px 100px;
+
             &__quest {
                 width: 100%;
 

@@ -164,8 +164,10 @@
 
             &__answer {
                 width: 80%;
+
                 &__left {
                     width: 48%;
+
                     &__list {
                         &__item {
                             height: 170px;
@@ -203,6 +205,8 @@
 
 @media only screen and (max-width: 991px) {
     .result {
+        padding: 100px 0 100px;
+
         .container {
             &__top {
                 width: 80%;
@@ -213,8 +217,10 @@
 
             &__answer {
                 width: 80%;
-                    &__left {
-                        width: 48%;
+
+                &__left {
+                    width: 48%;
+
                     &__list {
                         &__item {
                             height: auto;
@@ -224,17 +230,17 @@
                                     font-size: 24px;
                                     font-weight: 600;
                                 }
-    
+
                                 p {
                                     margin-top: 1.2rem;
                                 }
                             }
-    
+
                             b {
                                 font-size: 45px;
                                 font-weight: 600;
                             }
-    
+
                         }
                     }
                 }
@@ -277,8 +283,10 @@
             &__answer {
                 width: 100%;
                 display: block;
-                    &__left {
-                        width: 100%;
+
+                &__left {
+                    width: 100%;
+
                     &__list {
                         &__item {
                             height: auto;
@@ -288,17 +296,17 @@
                                     font-size: 24px;
                                     font-weight: 600;
                                 }
-    
+
                                 p {
                                     margin-top: 1.2rem;
                                 }
                             }
-    
+
                             b {
                                 font-size: 45px;
                                 font-weight: 600;
                             }
-    
+
                         }
                     }
                 }

@@ -64,8 +64,12 @@
 @media only screen and (max-width: 991px) {
     .intro {
         padding: 26px 0 25px;
+
         .container {
             &__list {
+                height: 400px;
+                background-size: 350px;
+
                 &__item {
                     width: 90%;
 
@@ -83,7 +87,7 @@
     .intro {
         .container {
             &__list {
-                height: 400px;
+                height: 350px;
                 background-size: 300px;
                 padding: 2.1rem 1.5rem;
 
@@ -111,7 +115,9 @@
     .intro {
         .container {
             &__list {
-                background-size: 270px;
+                background-size: 220px;
+                display: block;
+
                 &__item {
 
                     &__title {
